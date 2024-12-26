@@ -1,9 +1,12 @@
  
 # 🔬 Intelligent Sperm Image Detection and Classification System  
 click 【[中文版本](./README_CH.md)】
+
 ## 📝 Project Overview  
 
-This project is a biomedical image analysis system based on computer vision and image processing techniques, focusing on intelligent detection, classification, and visualization of tadpoles or sperm. Using advanced image processing algorithms, the project can accurately identify, locate, and classify targets from complex biomedical images.  
+This project is a biomedical image analysis system based on computer vision and image processing techniques, focusing on intelligent detection, classification, and visualization of sperm. Using advanced image processing algorithms, the project can accurately identify, locate, and classify targets from complex biomedical images.  
+<img src="./demoimage/result_tadpoles_with_legend.jpg">  
+<img src="./demoimage/image_processing_steps.png.png"> 
 
 ### 🌟 Key Features  
 
@@ -14,6 +17,10 @@ This project is a biomedical image analysis system based on computer vision and 
 - 🧩 Modular Code Architecture  
 
 ## 🚀 Quick Start  
+<img src="./demoimage/processing_steps.png">  
+<img src="./demoimage/complete_visualization.png">  
+<img src="./demoimage/2_complete_visualization.png">  
+
 
 ### Prerequisites  
 
