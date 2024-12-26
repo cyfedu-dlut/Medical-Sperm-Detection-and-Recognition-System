@@ -1,9 +1,10 @@
 # 🔬 精子智能图像检测与分类系统  
-![](./demoimage/result_tadpoles_with_legend.jpg)
+
 ## 📝 项目简介  
 
-本项目是一个基于计算机视觉和图像处理技术的生物医学图像分析系统，专注于精子的智能检测、分类和可视化。通过先进的图像处理算法，项目能够从复杂的生物医学图像中准确识别、定位和分类目标。  
-![](./demoimage/image_processing_steps.png.png)
+本项目是一个基于计算机视觉和图像处理技术的生物医学图像分析系统，专注于精子的智能检测、分类和可视化。通过先进的图像处理算法，项目能够从复杂的生物医学图像中准确识别、定位和分类目标。
+<img src="./demoimage/result_tadpoles_with_legend.jpg">  
+<img src="./demoimage/image_processing_steps.png.png">  
 ### 🌟 主要特点  
 
 - 🖼️ 多步骤图像处理流程  
@@ -13,9 +14,9 @@
 - 🧩 模块化的代码架构  
 
 ## 🚀 快速开始  
-![](./demoimage/processing_steps.png)
-![](./demoimage/complete_visualization.png)
-![](./demoimage/2_complete_visualization.png)
+<img src="./demoimage/processing_steps.png">  
+<img src="./demoimage/complete_visualization.png">  
+<img src="./demoimage/2_complete_visualization.png">  
 ### 前置条件  
 
 - Python 3.8+  
