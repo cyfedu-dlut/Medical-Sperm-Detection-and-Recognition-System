@@ -1,4 +1,6 @@
-# 🔬 精子智能图像检测与分类系统  
+# 🔬 精子智能图像检测与分类系统 
+
+完整代码运行：code.ipynb
 
 ## 📝 项目简介  
 
@@ -17,6 +19,7 @@
 <img src="./demoimage/processing_steps.png">  
 <img src="./demoimage/complete_visualization.png">  
 <img src="./demoimage/2_complete_visualization.png">  
+
 ### 前置条件  
 
 - Python 3.8+  

@@ -1,7 +1,7 @@
  
 # 🔬 Intelligent Sperm Image Detection and Classification System  
 click 【[中文版本](./README_CH.md)】
-
+complete running: code.ipynb
 ## 📝 Project Overview  
 
 This project is a biomedical image analysis system based on computer vision and image processing techniques, focusing on intelligent detection, classification, and visualization of sperm. Using advanced image processing algorithms, the project can accurately identify, locate, and classify targets from complex biomedical images.  
