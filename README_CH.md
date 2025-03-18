@@ -1,24 +1,49 @@
-# 🔬 精子智能图像检测与分类系统 
+# 🔬 精子智能图像检测与分类系统 V2.0 
 
 完整代码运行：code.ipynb
+
+<img src="./demoimage/complete_visualization.png">
+<img src="./demoimage/feature_scatter_matrix.png">  
 
 ## 📝 项目简介  
 
 本项目是一个基于计算机视觉和图像处理技术的生物医学图像分析系统，专注于精子的智能检测、分类和可视化。通过先进的图像处理算法，项目能够从复杂的生物医学图像中准确识别、定位和分类目标。
-<img src="./demoimage/result_tadpoles_with_legend.jpg">  
-<img src="./demoimage/image_processing_steps.png.png">  
+<img src="./demoimage/01_result.jpg">
+<img src="./demoimage/02_result.jpg">
+<img src="./demoimage/03_result.jpg">
+<img src="./demoimage/04_result.jpg">
+<img src="./demoimage/05_result.jpg">
+
 ### 🌟 主要特点  
 
 - 🖼️ 多步骤图像处理流程  
-- 🔍 精确的目标检测算法  
-- 📊 多维度目标分类  
-- 📈 详细的可视化结果展示  
+- 🔍 精确的检测算法  
+- 📊 多维度目标分类
+- 📈 详细的可视化结果展示 
 - 🧩 模块化的代码架构  
 
 ## 🚀 快速开始  
-<img src="./demoimage/processing_steps.png">  
-<img src="./demoimage/complete_visualization.png">  
-<img src="./demoimage/2_complete_visualization.png">  
+<img src="./demoimage/01_1._原始图像.png">  
+<img src="./demoimage/02_2._HSV色彩空间.png">  
+<img src="./demoimage/03_3._灰度图.png">  
+<img src="./demoimage/04_4._深紫色掩码.png">  
+<img src="./demoimage/05_5._深紫色掩码叠加.png">  
+<img src="./demoimage/06_4._中等紫色掩码.png">  
+<img src="./demoimage/07_5._中等紫色掩码叠加.png">  
+<img src="./demoimage/09_5._浅紫色掩码叠加.png">
+<img src="./demoimage/10_5._所有紫色掩码叠加.png">  
+<img src="./demoimage/11_6._深色掩码.png">  
+<img src="./demoimage/12_7._深色掩码叠加.png">  
+<img src="./demoimage/13_8._合并掩码(原始).png">  
+<img src="./demoimage/14_9._开运算后掩码.png">
+<img src="./demoimage/15_10._闭运算后掩码(最终).png">  
+<img src="./demoimage/16_11._最终掩码叠加.png">  
+<img src="./demoimage/17_12._所有检测到的轮廓.png">  
+<img src="./demoimage/18_13._初步筛选后的边界框.png">  
+<img src="./demoimage/19_14._分割前后的边界框.png">
+<img src="./demoimage/20_15._合并前的边界框.png">  
+<img src="./demoimage/21_16._合并后的最终边界框.png">  
+<img src="./demoimage/22_17._聚类分类结果.png">  
 
 ### 前置条件  
 
@@ -36,79 +61,10 @@ python -m venv venv
 source venv/bin/activate  # 在 Windows 上使用 `venv\Scripts\activate`  
 安装依赖
 pip install -r requirements.txt  
-🔧 项目结构
-tadpole-detection/  
-│  
-├── data/                # 测试图像  
-│   └── sperm.jpg  
-│  
-├── src/                 # 源代码  
-│   ├── __init__.py  
-│   ├── detection.py     # 目标检测核心算法  
-│   ├── utils.py         # 辅助工具函数  
-│   └── visualization.py # 可视化工具  
-│  
-├── tests/               # 单元测试  
-│   ├── conftest.py  
-│   └── test_detection.py  
-│  
-├── visualization/       # 处理步骤可视化输出  
-│  
-├── main.py              # 主程序入口  
-├── requirements.txt     # 依赖列表  
-└── README.md            # 项目说明文档  
 📖 使用指南
 基本运行
-python main.py  
-命令行参数（如果有）
-python main.py --input data/custom_image.jpg  
-🔬 工作流程详解
-图像预处理
+python main.py    
 
-色彩空间转换（BGR → HSV）
-颜色掩码生成
-形态学处理
-目标检测
-
-轮廓提取
-边界框生成
-异常框处理
-颜色分类
-
-浅紫色/深紫色比例分析
-多维度分类
-结果可视化
-
-目标框标注
-分类统计图表
-📊 输出示例
-控制台输出
-检测统计结果:  
-类别一: 5个目标  
-类别二: 3个目标  
-
-各检测框像素比例:  
-框 (x, y, w, h): 浅紫色/深紫色比例 0.3456  
-可视化输出
-visualization/ 目录下生成处理步骤图像
-生成 result_detection.jpg 最终检测结果
-生成 result_detection.jpg 图像比较
-🧪 单元测试
-pytest tests/  
-pytest tests/test_detection.py  # 运行特定测试  
-pytest --cov=src  # 代码覆盖率  
-🤝 贡献指南
-Fork 项目
-创建特性分支 (git checkout -b feature/AmazingFeature)
-提交修改 (git commit -m '添加了某某特性')
-推送到分支 (git push origin feature/AmazingFeature)
-提交 Pull Request
-🛠️ 技术栈
-Python 3.8+
-OpenCV 图像处理
-NumPy 数值计算
-Matplotlib 数据可视化
-Pytest 单元测试
 📌 注意事项
 确保输入图像清晰、对比度适中
 建议使用 JPG 或 PNG 格式

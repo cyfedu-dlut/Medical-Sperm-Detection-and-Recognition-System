@@ -1,12 +1,19 @@
  
-# 🔬 Intelligent Sperm Image Detection and Classification System  
+# 🔬 Intelligent Sperm Image Detection and Classification System V2.0 
 click 【[中文版本](./README_CH.md)】
 complete running: code.ipynb
+
+<img src="./demoimage/complete_visualization.png">
+<img src="./demoimage/feature_scatter_matrix.png">  
+
 ## 📝 Project Overview  
 
 This project is a biomedical image analysis system based on computer vision and image processing techniques, focusing on intelligent detection, classification, and visualization of sperm. Using advanced image processing algorithms, the project can accurately identify, locate, and classify targets from complex biomedical images.  
-<img src="./demoimage/result_tadpoles_with_legend.jpg">  
-<img src="./demoimage/image_processing_steps.png.png"> 
+<img src="./demoimage/01_result.jpg">
+<img src="./demoimage/02_result.jpg">
+<img src="./demoimage/03_result.jpg">
+<img src="./demoimage/04_result.jpg">
+<img src="./demoimage/05_result.jpg">
 
 ### 🌟 Key Features  
 
@@ -17,9 +24,27 @@ This project is a biomedical image analysis system based on computer vision and 
 - 🧩 Modular Code Architecture  
 
 ## 🚀 Quick Start  
-<img src="./demoimage/processing_steps.png">  
-<img src="./demoimage/complete_visualization.png">  
-<img src="./demoimage/2_complete_visualization.png">  
+<img src="./demoimage/01_1._原始图像.png">  
+<img src="./demoimage/02_2._HSV色彩空间.png">  
+<img src="./demoimage/03_3._灰度图.png">  
+<img src="./demoimage/04_4._深紫色掩码.png">  
+<img src="./demoimage/05_5._深紫色掩码叠加.png">  
+<img src="./demoimage/06_4._中等紫色掩码.png">  
+<img src="./demoimage/07_5._中等紫色掩码叠加.png">  
+<img src="./demoimage/09_5._浅紫色掩码叠加.png">
+<img src="./demoimage/10_5._所有紫色掩码叠加.png">  
+<img src="./demoimage/11_6._深色掩码.png">  
+<img src="./demoimage/12_7._深色掩码叠加.png">  
+<img src="./demoimage/13_8._合并掩码(原始).png">  
+<img src="./demoimage/14_9._开运算后掩码.png">
+<img src="./demoimage/15_10._闭运算后掩码(最终).png">  
+<img src="./demoimage/16_11._最终掩码叠加.png">  
+<img src="./demoimage/17_12._所有检测到的轮廓.png">  
+<img src="./demoimage/18_13._初步筛选后的边界框.png">  
+<img src="./demoimage/19_14._分割前后的边界框.png">
+<img src="./demoimage/20_15._合并前的边界框.png">  
+<img src="./demoimage/21_16._合并后的最终边界框.png">  
+<img src="./demoimage/22_17._聚类分类结果.png">  
 
 
 ### Prerequisites  
@@ -46,82 +71,10 @@ source venv/bin/activate  # Use `venv\Scripts\activate` on Windows
 pip install -r requirements.txt  
 ~~~
 
-🔧 Project Structure
-~~~bash
-spermproject/  
-│  
-├── data/                # Test Images  
-│   └── sperm.jpg  
-│  
-├── src/                 # Source Code  
-│   ├── __init__.py  
-│   ├── detection.py     # Core Detection Algorithms  
-│   ├── utils.py         # Utility Functions  
-│   └── visualization.py # Visualization Tools  
-│  
-├── tests/               # Unit Tests  
-│   ├── conftest.py  
-│   └── test_detection.py  
-│  
-├── visualization/       # Processing Step Visualizations  
-│  
-├── main.py              # Main Program Entry  
-├── requirements.txt     # Dependency List  
-└── README.md            # Project Documentation  
-~~~
-
 # 📖 User Guide
 Basic Execution
 python main.py  
-Command Line Arguments (If Available)
-python main.py --input data/custom_image.jpg  
-🔬 Workflow Explanation
-Image Preprocessing
-
-Color Space Conversion (BGR → HSV)
-Color Mask Generation
-Morphological Processing
-Target Detection
-
-Contour Extraction
-Bounding Box Generation
-Abnormal Frame Processing
-Color Classification
-
-Light/Deep Purple Ratio Analysis
-Multi-dimensional Classification
-Result Visualization
-
-Target Frame Annotation
-Classification Statistical Charts
-📊 Output Examples
-Console Output
-Detection Statistics:  
-Category One: 5 targets  
-Category Two: 3 targets  
-
-Pixel Ratio for Detection Frames:  
-Frame (x, y, w, h): Light/Deep Purple Ratio 0.3456  
-Visualization Output
-Processing step images generated in visualization/ directory
-Generate result_detection.jpg final detection result
-Generate result_detection.jpg image comparison
-### 🧪 Unit Testing
-pytest tests/  
-pytest tests/test_detection.py  # Run specific tests  
-pytest --cov=src  # Code coverage  
-### 🤝 Contribution Guidelines
-Fork the Project
-Create Feature Branch (git checkout -b feature/AmazingFeature)
-Commit Changes (git commit -m 'Added Some Amazing Feature')
-Push to Branch (git push origin feature/AmazingFeature)
-Submit Pull Request
-### 🛠️ Technology Stack
-Python 3.8+
-OpenCV Image Processing
-NumPy Numerical Computing
-Matplotlib Data Visualization
-Pytest Unit Testing
+ 
 ### 📌 Precautions
 Ensure input images are clear with appropriate contrast
 Recommended to use JPG or PNG formats
